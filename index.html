@@ -5,49 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test Form</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Topnav.css">
+    <link rel="stylesheet" type="text/css" href="CSS/FormStyle.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Bottomnav.css">
+    
     </head>
     <body>
-        
-        <div>
-            <form>
-                <h1 style="text-align: center; color:rgb(181, 21, 221)">Registration Form</h1>
-                <fieldset style="background-color:rgb(116, 175, 209)">
-                        Username: <input type="text" name="uname" required>  <br>
-                        Password:  &nbsp;<input type="password" name="password" required><br>
-                        Gender: <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="male" checked required> Male<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="female" required> Female<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="other" required> Other<br>
-                        Do you own a vehicle: <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="vehicle" value="Yes" checked required> Yes<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="vehicle" value="No" required> No<br>
-                        If yes then what do you own? <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="vehicle2" value="Car"> I have a car <br>
-                        Which car do you have?
-                        &nbsp;&nbsp;&nbsp;&nbsp;<select name="cars">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="fiat">Fiat</option>
-                        <option value="audi">Audi</option>
-                        </select><br>
-                        Select your favorite color:&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="color" name="favcolor">  <br>
-                        Birth Date: &nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="bday" required><br>
-                        E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" required><br>  
-                        Age (Between 20 and 40): &nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="quantity" min="20" max="40"> <br>
-                        Your writing skills:&nbsp;&nbsp;&nbsp;&nbsp;<input type="range" name="points" min="0" max="10"><br>
-                        <b>Comments Here:</b><br>
-                        <textarea rows="4" cols="50" name="comment"></textarea>
-                        <br><br><input type="Submit" value="Submit">
-                        &nbsp;&nbsp;&nbsp;&nbsp;<input type="Reset" value="Reset">
-                        &nbsp;&nbsp;&nbsp;&nbsp;<input type="Cancle" value="Cancle"><br>
-                    </fieldset>   
-            </form>
+                  
+        <div class="topnav">
+            <a class="active" href="file:///home/rinju/Documents/HTML/Home.html#Contact">Home</a>
+            <a href="file:///home/rinju/Documents/HTML/table.html">Registered Users</a>
+            <a href="file:///home/rinju/Documents/HTML/index.html">Registration Form</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </div>
-        <br>
-        <a href="file:///home/rinju/Documents/HTML/table.html"><h3 style="color:mediumblue"><i>Table</i></h3></a>
-        &nbsp;<a href="https://www.itournepal.com/"><img src="website.png" height="30" width="90"></a>
+          
+        <div style="padding-left:16px">
+            <h1 style="text-align: center; color:rgb(181, 21, 221)">Registration Form</h1>
+        </div>
 
-        </body>
+        <div class="w3-container">
+            <form>
+                
+                    <div id="Username">
+                        <label for="name">Username:</label>
+                        <input type="text" id="name" name="username" placeholder="Username" required>
+                    </div>
+
+                    <div id="Password">
+                        <label for="psswd">Password:</label>
+                        <input type="password" id="psswd" name="password" placeholder="Password" required>
+                    </div>
+
+                    <div id="Gender">
+                        <label for="sex">Gender:</label>
+                        <input type="radio" id="sex" name="gender" value="male" checked required> Male
+                        <input type="radio" id="sex" name="gender" value="female" required> Female
+                        <input type="radio" id="sex" name="gender" value="other" required> Other
+                    </div>
+                        
+                    <div id="ownavehicle">
+                        <label for="ownvehicle">Do you own a vehicle?</label>
+                        <input type="radio" id="ownvehicle" name="vehicle" value="Yes" checked required> Yes
+                        <input type="radio" id="ownvehicle" name="vehicle" value="No" required> No
+                    </div>
+
+                    <div id="vehicle">
+                        <label for="whichvehicle">If yes then what do you own?</label>
+                        <input type="checkbox" id="whichvehicle" name="vehicle1" value="Bike"> I have a bike
+                        <input type="checkbox" id="whichvehicle" name="vehicle2" value="Car"> I have a car 
+                    </div>
+                     
+                    <div id="car">
+                        <label for="brand">Which car do you have?</label>
+                        <select id="brand" name="cars">
+                            <option id="brand" value="volvo">Volvo</option>
+                            <option id="brand" value="saab">Saab</option>
+                            <option id="brand" value="fiat">Fiat</option>
+                            <option id="brand" value="audi">Audi</option>
+                        </select>
+                    </div>
+                    
+                    <div id="favcolor">
+                        <label for="color">Select your favorite color:</label>
+                        <input type="color" id="color" name="favcolor"> 
+                    </div> 
+                        
+                    <div id="BirthDate">
+                        <label for="bday">Birth Date:</label>
+                        <input type="date" id="bday" name="bday" required> 
+                    </div>  
+                        
+                    <div id="Email">
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="email" placeholder="Email" required>
+                    </div>     
+                        
+                    <div id="Age">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="quantity" min="20" max="40" placeholder="Between 20 and 40">
+                    </div>     
+                        
+                    <div id="speakingspeed">
+                        <label for="skill">Your English Speaking skill:</label>
+                        <input type="range" id="skill" name="points" min="0" max="10">
+                    </div>     
+                        
+                    <div id="Message">
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="message" placeholder="Type your message here..."></textarea>
+                    </div> 
+                       
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                        <button type="cancle" onclick="myFunction()">Cancle</button>
+                    </div>
+                
+            </form>
+            <script>
+                function myFunction() 
+                {
+                    alert("Are you sure you want to cancle??");
+                }
+            </script>
+        </div>
+        
+        <div class="navbar">
+                <a href="file:///home/rinju/Documents/HTML/LinkAbout.html" class="active">About</a>
+                <a href="#Contact">Contact</a>
+                <a href="https://twitter.com/login?lang=en"><img src="images/twitter-512.png" height="30" width="30"></a> 
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" height="30" width="30"></a> 
+        </div> 
+        
+    </body>
     </html>
