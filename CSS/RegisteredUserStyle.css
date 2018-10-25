@@ -1,0 +1,29 @@
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+   
+}
+
+body {
+    margin: 0;
+  }
+  
+  .header {
+      background-color: #966060;
+      text-align: center;
+      padding: 8px;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.table{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
