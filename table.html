@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Table</title>
-    <style>
-        table, th, td {
-            border: 3px solid black;
-            border-collapse: collapse;
-        }
-        </style>
+    <title>Registered Users</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Topnav.css">
+    <link rel="stylesheet" type="text/css" href="CSS/RegisteredUserStyle.css">
 </head>
 <body>
-    <br><br>
-    <div style="text-align:left"><b>Registered users</b><br><br>
-    <table style="background-color:DodgerBlue; width:50%">
+  
+    <div class="topnav">
+        <a class="active" href="file:///home/rinju/Documents/HTML/Home.html#Contact">Home</a>
+        <a href="file:///home/rinju/Documents/HTML/table.html">Registered Users</a>
+        <a href="file:///home/rinju/Documents/HTML/index.html">Registration Form</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Our Registered Users</h1>
+    </div>
+
+    <div class="container">
+      
+      <img src="images/bgimage.jpeg" alt="Snow" style="width:80%;">
+
+      <div class="table">
+      
+      <table style="background-color:DodgerBlue; width:50%">
         <tr>
           <th>Firstname</th>
           <th>Lastname</th>
@@ -40,17 +57,15 @@
         </tr>
         <tr>
             <td>Suman</td>
-            <td>Pokhre;</td>
+            <td>Pokhrel</td>
             <td>22</td>
             <td>Bafal</td>
             <td>98432525224</td>
           </tr>
-      </table> 
+        </table>
+       
     </div>
-      <br>
-    <div>
-      <h3 style="color:purple">To go back to the main page please click the link below</h3><br>
-      <a href="file:///home/rinju/Documents/HTML/index.html"><img src="homepage.png" height="50" width="50"></a>
-    </div>
+  </div>
+      
 </body>
 </html>
